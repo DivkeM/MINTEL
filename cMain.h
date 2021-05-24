@@ -1,12 +1,14 @@
 #pragma once
 
 #include <wx/wx.h>
+#include <wx/splitter.h>
+
 //this class is the start of GUI app
 //this will hold ctor and dtor and event handlers
 class cMain : public wxFrame //this will be the form (wx call frame)
 {
 public:
-	cMain();
+	cMain(const wxString& title, const wxPoint& pos, const wxSize& size);
 	~cMain();
 
 public:

@@ -1,5 +1,4 @@
 #include "cApp.h"
-#include "cSizers.h"
 
 wxIMPLEMENT_APP(cApp);
 
@@ -14,9 +13,8 @@ cApp::~cApp()
 
 bool cApp::OnInit()
 {
-	//m_frame1 = new cMain();
-	mySizer1 = new cSizers("Hello World", wxDefaultPosition, wxDefaultSize);
-	//m_frame1->Show();
-	mySizer1->Show();
+	m_frame1 = new cMain("MINTEL v0.1b", wxDefaultPosition, wxSize(640, 480));//wxDefaultSize);
+	m_frame1->Show();
+
 	return true;
 }
